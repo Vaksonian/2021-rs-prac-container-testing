@@ -31,7 +31,7 @@ jobs:
         uses: aquasecurity/trivy-action@0.0.20
         with:
           # image reference(for backward compatibility)
-          image-ref: amazonlinux:2016.09.0.20161028 
+          image-ref: jrrdev/cve-2017-5638:latest
           # exit code when vulnerabilities were found
           exit-code: 0
           # severities of vulnerabilities to be displayed
@@ -43,9 +43,9 @@ jobs:
         uses: aquasecurity/trivy-action@0.0.20
         with:
           # image reference(for backward compatibility)
-          image-ref: amazonlinux:2016.09.0.20161028
+          image-ref: jrrdev/cve-2017-5638:latest
           # exit code when vulnerabilities were found
-          exit-code: 1
+          exit-code: 0
           # severities of vulnerabilities to be displayed
           severity: MEDIUM
           
@@ -55,9 +55,9 @@ jobs:
         uses: aquasecurity/trivy-action@0.0.20
         with:
           # image reference(for backward compatibility)
-          image-ref: amazonlinux:2016.09.0.20161028
+          image-ref: jrrdev/cve-2017-5638:latest
           # exit code when vulnerabilities were found
-          exit-code: 2
+          exit-code: 1
           # severities of vulnerabilities to be displayed
           severity: HIGH,CRITICAL
 
