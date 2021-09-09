@@ -45,7 +45,7 @@ jobs:
           # image reference(for backward compatibility)
           image-ref: amazonlinux:2016.09.0.20161028
           # exit code when vulnerabilities were found
-          exit-code: 0
+          exit-code: 1
           # severities of vulnerabilities to be displayed
           severity: MEDIUM
           
@@ -57,7 +57,7 @@ jobs:
           # image reference(for backward compatibility)
           image-ref: amazonlinux:2016.09.0.20161028
           # exit code when vulnerabilities were found
-          exit-code: 0
+          exit-code: 2
           # severities of vulnerabilities to be displayed
           severity: HIGH,CRITICAL
 
